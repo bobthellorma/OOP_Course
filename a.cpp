@@ -1,8 +1,11 @@
+#include "musician.h"
 #include <iostream>
 #include <string>
-#include "musician.h"
 
 int main(){
-Musician Kyle = Musician();
-std::cout << Kyle.get_instrument() << endl;
+  musician Eric = musician("saxophone",35);
+  musician Dylan = musician();
+  int a = Eric.getExperience();
+  std::string b = Dylan.getInstrument();
+  std::cout << "Eric is " << a << b << std::endl;
 }
