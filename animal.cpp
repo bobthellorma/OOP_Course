@@ -3,38 +3,35 @@
 #include "animal.h"
 using namespace std;
 
-Animal::ID = 0; // set static animal ID to zero initially
+int animal::count = 0; // set static animal ID to zero initially
 
-Animal::Animal(string n, int v)
+animal::animal(string n, int v)
 {
     name = n;
     volume = v;
-    ID = Animal::count++; // id = no. of animals + 1
+    animalID = count;
+    count++;
+    //animalID = Animal::count++; // id = no. of animals + 1
 }
 
-Animal::set_name(string animalName)
+void animal::set_name(string animalName)
 {
     name = animalName;
 }
 
-Animal::set_volume(int animalVolume)
+void animal::set_volume(int animalVolume)
 {
     volume = animalVolume;
 }
 
-string Animal::get_name()
-{
-    return name;
-}
-
-int Animal::get_ID()
+int animal::get_ID()
 {
     return animalID;
 }
     
-int Animal::get_volume()
+int animal::get_volume()
 {
     return volume;
 }
 
-Animal::ID = 0; // assign static variable a value
+animal::ID = 0; // assign static variable a value

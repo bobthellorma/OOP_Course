@@ -3,9 +3,9 @@
 #include "vegie.h"
 using namespace std;
 
-Vegie::nextID = 100; // start at 100
+vegie::nextID = 100; // start at 100
     
-Vegie::vegie(string n, int v)
+vegie::vegie(string n, int v)
 {
     name = n;
     volume = v;
@@ -13,17 +13,17 @@ Vegie::vegie(string n, int v)
     favourite_food = "grass";
 }
 
-string Vegie::get_name()
+string vegie::get_name()
 {
     return ("Safe: " + name);
 }
 
-Vegie::set_fav(string f)
+vegie::set_fav(string f)
 {
     favourite_food = f;
 }
 
-string Vegie::get_fav()
+string vegie::get_fav()
 {
     return favourite_food;
 }

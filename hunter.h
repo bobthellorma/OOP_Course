@@ -1,16 +1,18 @@
-#ifndef "_HUNTER_H"
-#define "_HUNTER_H"
+#ifndef _HUNTER_H
+#define _HUNTER_H
 #include <string>
+#include "animal.h"
+using namespace std;
 
-class Hunter{
+class hunter : public animal{
     public:
     hunter(string n, int v);  // create a hunter with name n and body volume v
     string get_name();
     int get_kills();
-    set_kills(int k);
+    void set_kills(int k);
     
 
-    private:
+    protected:
     int animalID;
     string name; // hunter's name
     int volume; // hunter's body volume
