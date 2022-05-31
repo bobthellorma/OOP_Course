@@ -14,7 +14,8 @@ using namespace std;
 
 int main()
 {
-    
+    // assign protected static 
+    //animal first = animal
     // create newAnimal
     //animal p = animal("Travis",31);
     //cout << p.get_ID();
@@ -25,6 +26,9 @@ int main()
     
     // create zoo
     zoo H = zoo("Pringles",6,3);
+
+    // find data on animals in the zoo
+    //cout << H[3]->get_name() << endl;
 }
 
 

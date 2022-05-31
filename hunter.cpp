@@ -5,6 +5,9 @@ hunter::hunter(string n, int v)
 {
     name = n;
     volume = v;
+    if (nextID == 0){
+        nextID = 1000;
+    }
     animalID = nextID++;
     kills = 0;
 }

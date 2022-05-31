@@ -2,16 +2,15 @@
 #include <iostream>
 #include "vegie.h"
 using namespace std;
-
-/* need to set 'protected' static variable to 100. How do I do this?
-//vegie::nextID = 100; // start at 100
-*/
     
 vegie::vegie(string n, int v)
 {
     name = n;
     volume = v;
-    animalID = nextID++;
+    if (animalID == 0){
+        animalID = 100;
+    }
+    animalID = vegie::nextID++;
     favourite_food = "grass";
 }
 
