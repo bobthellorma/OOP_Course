@@ -24,4 +24,4 @@ void hunter::set_kills(int k)
     kills = k;
 }
 
-hunter::nextID = 1000; // assign static variable a value
+//hunter::nextID = 1000; // assign static variable a value

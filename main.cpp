@@ -1,17 +1,13 @@
-#include "animal.cpp"
-#include "hunter.cpp"
+#include "animal.h"
+#include "hunter.h"
 #include "vegie.h"
 #include "zoo.h"
-#include <iostream>
-#include <string>
-
+using namespace std;
 
 int main()
 {
-
-    // create a zoo object
-    zoo first_zoo = zoo("Pasture",3,1);
-
+    // create zoo
+    zoo H = zoo("Pringles",6,3);
 }
 
 

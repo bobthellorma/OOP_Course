@@ -11,7 +11,6 @@ animal::animal(string n, int v)
     volume = v;
     animalID = count;
     count++;
-    //animalID = Animal::count++; // id = no. of animals + 1
 }
 
 void animal::set_name(string animalName)
@@ -33,3 +32,10 @@ int animal::get_volume()
 {
     return volume;
 }
+
+string animal::get_name()
+{
+    return "None";
+}
+
+// animal::ID = 0; // assign static variable a value
