@@ -6,6 +6,7 @@ using namespace std;
 class animal{
     static int count; // number of animals in the zoo
     public:
+    animal(); // default constructor
     animal(string n, int v);  // creates an animal with name n and body volume v.
     void set_name(string animalName); // update name
     void set_volume(int animalVolume); // update volume

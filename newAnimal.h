@@ -7,6 +7,8 @@ class animal{
 
     public:
     static int count;
+    animal(); // default constructor
+    ~animal(); // default destructor
     animal (string n, int v); // constructor
     void set_name(string animalName); // update name
     void set_volume(int animalVolume); // update volume

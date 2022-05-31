@@ -5,6 +5,11 @@ using namespace std;
 
 int animal::count = 0; // set static animal ID to zero initially
 
+animal::animal()
+{
+    // default constructor
+}
+
 animal::animal(string n, int v)
 {
     name = n;

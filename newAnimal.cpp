@@ -38,4 +38,12 @@ string animal::get_name()
     return "None";
 }
 
+animal::animal(){
+    // default constructor
+}
+
+animal::~animal(){
+    // default destructor
+}
+
 // animal::ID = 0; // assign static variable a value

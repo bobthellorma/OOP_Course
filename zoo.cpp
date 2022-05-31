@@ -4,9 +4,10 @@ using namespace std;
 
 zoo::zoo(string n, int cows, int lions)
 {
+    // the zoo class needs to create an array of cows and lions 
 
     // create array
-    animals = new *animal[cows+lions];
+    animals = new animal*[cows+lions];
 
 
     for (int i = 0; i < cows; i++)
