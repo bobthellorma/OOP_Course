@@ -12,8 +12,8 @@ class vegie : public animal{ // inherits publicly from animal
 
     public:
     vegie(string n, int v); // create a vegie with name n and body volume v
-    void set_fav(string f); // set favourite food
-    string get_fav(); // get favourite food
+    void set_favourite_food(string f); // set favourite food
+    string get_favourite_food(); // get favourite food
     string get_name(); // get name
 };
 

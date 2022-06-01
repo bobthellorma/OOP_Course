@@ -17,12 +17,12 @@ string vegie::get_name()
     return ("Safe: " + name);
 }
 
-void vegie::set_fav(string f)
+void vegie::set_favourite_food(string f)
 {
     favourite_food = f;
 }
 
-string vegie::get_fav()
+string vegie::get_favourite_food()
 {
     return favourite_food;
 }
