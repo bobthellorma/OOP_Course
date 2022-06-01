@@ -5,6 +5,10 @@ using namespace std;
 
     student::student(int Age, string Name)
     {
+        if (Age < 18)
+        {
+            throw("Student must be older than 18");
+        }
         age = Age;
         name = Name;
         title = "Mr ";

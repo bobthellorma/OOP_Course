@@ -10,22 +10,43 @@ using namespace std;
 {   
 
     // test student class : working
-    /*
-    student Rory = student(36, "Rory");
-    student Britta = student(42, "Britta");
+    
+    try{
+    student Rory = student(12, "Rory");
     cout << Rory.get_age() << endl;
     cout << Rory.get_ID() << endl;
+    }
+    catch (const char* msg){
+        cerr << msg << endl;
+    }
+    
+    try{
+    student Britta = student(42, "Britta");
     cout << Britta.get_ID() << endl;
-    */
+    }
+    catch (const char* msg){
+        cerr << msg << endl;
+    }
+    
 
     // test teacher class : working
-    /*
+    try{
     teacher Vaughn = teacher(43, "Vaughn");
-    teacher Alex = teacher(36, "Alex");
     cout << Vaughn.get_age() << endl;
+    }
+    catch(const char* msg){
+        cerr << msg << endl;
+    }
+    try{
+    teacher Alex = teacher(28, "Alex");
     cout << Alex.get_name() << endl;
     cout << Alex.get_ID() << endl;
-    */
+    }
+    catch(const char* msg){
+        cerr << msg << endl;
+    }
+    
+    
 
    // test university
    university H = university(4,4,"Adelaide");

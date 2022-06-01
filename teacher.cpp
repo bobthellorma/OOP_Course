@@ -4,6 +4,13 @@ using namespace std;
 
 teacher::teacher(int Age, string Name)
 {
+    // try catch and throw where teacher can't be younger than 30
+    if (Age < 30)
+    {
+        throw("Teacher must be older than 30");
+    }
+
+    // normal constructor
     age = Age;
     name = Name;
     title = "Dr ";
