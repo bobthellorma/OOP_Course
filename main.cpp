@@ -28,9 +28,15 @@ int main()
     zoo H = zoo("Pringles",2,3); // we get the messages
     
     //Test to access animal array - works
+    /*
     animal** animal_array = H.get_animals();
     cout << animal_array[1]->get_volume() << endl;
     cout << animal_array[2]->get_volume() << endl;
+    */
+
+    // create object of sort_by_animal
+
+    // then call function
     
 
     // create hunter

@@ -1,9 +1,19 @@
 #include <string>
-#include "zoo.h"
-#include "animal.h"
-#include "hunter.h"
-#include "vegie.h"
+#include "sort_by_animal_ID.h"
 using namespace std;
 
-
-static void sort(animal **animals,int n)	// sorts the array of n animals into ascending order using their names
+void sort_by_animal_ID::sort(animal **animals,int n)
+{
+    int i,j;
+    for (i = 0; i < n-1; i++)
+    {
+        for (j = 0; j < n-i-1; j++)
+        {
+           if (animals[j]->get_ID() > animals[j+1]->get_ID())
+           {
+               swap(animals[j], animals[j+1]);
+               
+           }
+        }
+    }
+}
