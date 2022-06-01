@@ -13,7 +13,6 @@ class hunter : public animal{
     
 
     protected:
-    string name; // hunter's name
     int volume; // hunter's body volume
     int kills; // how many kills have been recorded, initialised to 0
     static int nextID;

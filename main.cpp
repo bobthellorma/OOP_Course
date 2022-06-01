@@ -35,6 +35,7 @@ int main()
     // create hunter
     hunter A = hunter("Narm",46);
     cout << A.get_ID() << endl;
+    A.set_name("Bobby");
     cout << A.get_name() << endl;
     vegie B = vegie("Took", 45);
     cout << B.get_ID() << endl;
