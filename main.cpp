@@ -25,10 +25,16 @@ int main()
     
     
     // create zoo
-    zoo H = zoo("Pringles",6,3);
+    zoo H = zoo("Pringles",2,3); // we get the messages
+
+    // create hunter
+    hunter A = hunter("Narm",46);
+    cout << A.get_ID() << endl;
+    hunter B = hunter("Took", 45);
+    cout << B.get_ID() << endl;
 
     // find data on animals in the zoo
-    //cout << H[3]->get_name() << endl;
+    //cout << H.animals[3]->get_name() << endl;
 }
 
 

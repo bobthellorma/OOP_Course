@@ -5,9 +5,6 @@ hunter::hunter(string n, int v)
 {
     name = n;
     volume = v;
-    if (nextID == 0){
-        nextID = 1000;
-    }
     animalID = nextID++;
     kills = 0;
 }
@@ -27,4 +24,4 @@ void hunter::set_kills(int k)
     kills = k;
 }
 
-//hunter::nextID = 1000; // assign static variable a value
+int hunter::nextID = 1000; // assign static variable a value

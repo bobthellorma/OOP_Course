@@ -7,10 +7,7 @@ vegie::vegie(string n, int v)
 {
     name = n;
     volume = v;
-    if (animalID == 0){
-        animalID = 100;
-    }
-    animalID = vegie::nextID++;
+    nextID = nextID++;
     favourite_food = "grass";
 }
 
@@ -28,3 +25,5 @@ string vegie::get_fav()
 {
     return favourite_food;
 }
+
+int vegie::nextID = 100;
