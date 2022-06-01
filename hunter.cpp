@@ -5,13 +5,14 @@ hunter::hunter(string n, int v)
 {
     name = n;
     volume = v;
-    animalID = nextID++;
+    animalID = nextID;
+    nextID++;
     kills = 0;
 }
 
 string hunter::get_name()
 {
-    return ("Hunter " + name); // return name prefixed with hunter
+    return ("Hunter: " + name); // return name prefixed with hunter
 }
 
 int hunter::get_kills()

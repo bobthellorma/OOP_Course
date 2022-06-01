@@ -7,7 +7,8 @@ vegie::vegie(string n, int v)
 {
     name = n;
     volume = v;
-    nextID = nextID++;
+    animalID = nextID; 
+    nextID++;
     favourite_food = "grass";
 }
 

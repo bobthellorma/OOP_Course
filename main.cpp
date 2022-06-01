@@ -26,11 +26,16 @@ int main()
     
     // create zoo
     zoo H = zoo("Pringles",2,3); // we get the messages
+    /*
+    Test to access animal array - works
+    animal** animal_array = H.get_animals();
+    cout << animal_array[3]->get_name() << endl;
+    */
 
     // create hunter
     hunter A = hunter("Narm",46);
     cout << A.get_ID() << endl;
-    hunter B = hunter("Took", 45);
+    vegie B = vegie("Took", 45);
     cout << B.get_ID() << endl;
 
     // find data on animals in the zoo
