@@ -1,4 +1,5 @@
 #include "hunter.h"
+#include <string>
 using namespace std;
 
 hunter::hunter(string n, int v)

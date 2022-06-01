@@ -1,4 +1,7 @@
 #include "zoo.h"
+#include "animal.h"
+#include "hunter.h"
+#include "vegie.h"
 #include <string>
 #include <iostream>
 using namespace std;
@@ -15,16 +18,16 @@ zoo::zoo(string n, int cows, int lions)
     {
         // create cow objects
         animals[i] = new vegie("Daisy",100);
-        cout << animals[i]->get_ID() << endl;
-        cout << animals[i]->get_name() << endl;
+        //cout << animals[i]->get_ID() << endl;
+        //cout << animals[i]->get_name() << endl;
     }
 
     for (int i = cows; i < lions+cows; i++)
     {
         // create lion objects
         animals[i] = new hunter("Clarence",50);
-        cout << animals[i]->get_ID() << endl;
-        cout << animals[i]->get_name() << endl;
+        //cout << animals[i]->get_ID() << endl;
+        //cout << animals[i]->get_name() << endl;
     }
 
     name = n; // assign name
