@@ -48,10 +48,23 @@ using namespace std;
     
     
 
+
+
+
+
+
+
+
    // test university
-   university H = university(4,4,"Adelaide");
+   try{
+   university H = university(4,-1,"Adelaide");
    person** AdelaideStaff = H.get_people();
    cout << AdelaideStaff[3]->get_name() << endl;
    cout << AdelaideStaff[6]->get_ID() << endl;
    cout << H.get_name() << endl;
+   }
+   catch(const char* msg){
+       cerr << msg << endl;
+   }
+   
 }

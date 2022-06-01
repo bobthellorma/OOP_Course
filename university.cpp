@@ -4,6 +4,10 @@ using namespace std;
 
 university::university(int students, int teachers, string Name)
 {
+    if (students < 0 || teachers < 0 || students + teachers < 1)
+    {
+        throw ("Invalid input arguments");
+    }
     // create initial array
     persons = new person*[students + teachers];
     name = Name;
