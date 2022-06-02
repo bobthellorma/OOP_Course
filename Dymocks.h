@@ -14,7 +14,7 @@ class Dymocks : public BookStore
     void set_isOnline(bool o);
     float get_onlineTax();
 
-    protected:
+    private:
     static int nextNumStores;
     int storeID;          // unique store ID 
     bool isOnline; 
