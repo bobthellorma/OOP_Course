@@ -1,9 +1,22 @@
+#ifndef BARNES_NOBLE_H
+#define BARNES_NOBLE_H
+#include "BookStore.h"
 
-BarnesNoble()          // inherit from base class default constructor    
-BarnesNoble(string n)  // set name n  
-                       // should call the corresponding constructor from the parent class
-                       // with the online parameter being false
-int numSoldBooks;   // attribute for numSoldBooks, initialised to 0
+class BarnesNoble : public BookStore{
 
-void soldBook();   // increments numSoldBooks
-int get_numSoldBooks(); // returns the books sold
+    public:
+    BarnesNoble(); 
+    BarnesNoble(string n);
+    void soldBook();
+    int get_numSoldBooks();
+    float get_onlineTax();
+
+    private:
+    int numSoldBooks = 0;
+    bool isOnline;
+
+
+};
+
+
+#endif

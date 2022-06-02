@@ -13,6 +13,7 @@ Dymocks::Dymocks(bool o)
     isOnline = o;
     numBook = 1000;
     name = "Dymocks";
+    address = "";
     storeID = nextNumStores;
     nextNumStores++;
 }
