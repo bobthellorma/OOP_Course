@@ -2,6 +2,10 @@
 #define _BOOKSTORES_H
 
 class BookStores{
+
+    public:
+
+    private:
     
 }
 

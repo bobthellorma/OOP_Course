@@ -19,7 +19,7 @@ class BookStore
     protected:
     string name;                // the book store name
     string address;             // the book store address
-    int numBook;
+    int numBook = 0;
 
 };
 

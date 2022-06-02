@@ -4,6 +4,7 @@ using namespace std;
 
 BookStore::BookStore()
 {
+    //numBook = 0;
     // default constructor
 } 
 
@@ -11,10 +12,12 @@ BookStore::BookStore(string n, string a, int b) // constructor
 {
     name = n;
     address = a;
-    if (b>=0){
+    if (b >=0 ){
     numBook = b;
     }
-    else{b=0;
+    else
+    {
+        b=0;
     }
 }
 
