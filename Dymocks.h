@@ -1,5 +1,6 @@
 #ifndef _DYMOCKS_H
 #define _DYMOCKS_H
+#include "BookStore.h"
 
 class Dymocks : public BookStore
 {

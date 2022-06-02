@@ -7,4 +7,5 @@ using namespace std;
 int main()
 {
     Dymocks FirstStore = Dymocks("True");
+    cout << FirstStore.get_name() << endl;
 }
