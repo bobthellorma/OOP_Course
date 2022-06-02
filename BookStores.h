@@ -4,10 +4,9 @@
 class BookStores{
 
     public:
+    static void sort(Dymocks **store, int n);
 
-    private:
-    
-}
+};
 
 
 
