@@ -60,4 +60,4 @@ float Dymocks::get_onlineTax()
     }
 }
 
-int Dymocks::nextNumStores = 0; // initialise static value
+int Dymocks::nextNumStores = 1; // initialise static value
