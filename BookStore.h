@@ -14,7 +14,7 @@ class BookStore
     string get_name();
     string get_address();
     int get_numBook();
-    virtual float get_onlineTax() = 0; // is this in public?
+    virtual float get_onlineTax() = 0;
 
     protected:
     string name;                // the book store name

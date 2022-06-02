@@ -53,7 +53,10 @@ float Dymocks::get_onlineTax()
     {
     return 500.0;
     }
-    else{return 0.0;}
+    else
+    {
+        return 0.0;
+    }
 }
 
 int Dymocks::nextNumStores = 0; // initialise static value
