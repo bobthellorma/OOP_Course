@@ -1,6 +1,8 @@
+#include "BookStore.h"
 #ifndef BARNES_NOBLE_H
 #define BARNES_NOBLE_H
-#include "BookStore.h"
+#include <string>
+
 
 class BarnesNoble : public BookStore{
 
