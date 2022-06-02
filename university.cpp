@@ -5,8 +5,9 @@
 #include <string>
 using namespace std;
 
-university::university(int students,int teachers,string names[], int ages[])
+university::university(int students, int teachers,string names[], int ages[])
 {
+
     persons = new person*[students+teachers];
 
     for (int i = 0; i < students; i++)
@@ -14,9 +15,9 @@ university::university(int students,int teachers,string names[], int ages[])
         persons[i] = new student("Potassium",19);
     }
 
-    for (int i = students; i <students+teachers; i++)
+    for (persons[i] = students; i <students+teachers; i++)
     {
-        persons[i] = new teacher("Ronald",37);
+        T = new teacher("Ronald",37);
     }
 
     for (int i = 0; i < students+teachers; i++)
