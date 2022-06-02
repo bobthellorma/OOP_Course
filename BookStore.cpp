@@ -11,7 +11,11 @@ BookStore::BookStore(string n, string a, int b) // constructor
 {
     name = n;
     address = a;
+    if (b>=0){
     numBook = b;
+    }
+    else{b=0;
+    }
 }
 
 void BookStore::set_name(string n)
