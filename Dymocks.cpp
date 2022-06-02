@@ -13,8 +13,8 @@ Dymocks::Dymocks(bool o)
     numBook = 1000;
     name = "Dymocks";
     address = "";
-    nextNumStores++;
     storeID = nextNumStores;
+    nextNumStores++;
 }
 
 int Dymocks::get_nextNumStores()
