@@ -26,7 +26,9 @@ void BookStore::set_address(string a)
 
 void BookStore::set_numBook(int b)
 {
+    if (b >= 0){
     numBook = b;
+    }
 }
 
 string BookStore::get_name()
