@@ -48,7 +48,7 @@ using namespace std;
     
     // test university
     try{
-    university H = university(4,-1,"Adelaide");
+    university H = university(4,0,"Adelaide");
     person** AdelaideStaff = H.get_people();
     cout << AdelaideStaff[3]->get_name() << endl;
     cout << AdelaideStaff[6]->get_ID() << endl;
