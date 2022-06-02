@@ -1,4 +1,3 @@
-#include "BookStore.h"
 #include "Dymocks.h"
 #include <string>
 using namespace std;
@@ -14,8 +13,8 @@ Dymocks::Dymocks(bool o)
     numBook = 1000;
     name = "Dymocks";
     address = "";
-    storeID = nextNumStores;
     nextNumStores++;
+    storeID = nextNumStores;
 }
 
 int Dymocks::get_nextNumStores()
@@ -60,4 +59,4 @@ float Dymocks::get_onlineTax()
     }
 }
 
-int Dymocks::nextNumStores = 1; // initialise static value
+int Dymocks::nextNumStores = 0; // initialise static value
