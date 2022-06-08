@@ -50,7 +50,7 @@ class A{
 
     public:
     A(int x):_x(x){}; // Constructor 1
-    A():_x(4){}; // if no argument called 
+    A():_x(4){}; // defaults _x = 4 if no argument called 
     int get_x(){return _x;};
 };
 
@@ -63,9 +63,10 @@ void usingClass()
 
 void avoidingSegFault()
 {
-    A* c;
-    A very = *c;
+    A very;
+    A* c = & very;
     std::cout << c->get_x() << std::endl;
+    std::cout << very.get_x() << std::endl;
 }
 
 int main()
