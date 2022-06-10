@@ -63,8 +63,14 @@ void usingClass()
 
 void avoidingSegFault()
 {
+    // opt 1 to avoid segFault
+    A* betterOption = new A;
+
+    // opt 2 to avoid segFault
     A very;
     A* c = & very;
+
+    // testing
     std::cout << c->get_x() << std::endl;
     std::cout << very.get_x() << std::endl;
 }
