@@ -30,6 +30,9 @@ class SportsCar : public Car
 
 int main()
 {
-    SportsCar *a_car = new SportsCar ("BMW",2007,250);
-    cout << a_car->get_top_speed() << endl;
+    //SportsCar *a_car = new SportsCar ("BMW",2007,250);
+    //cout << a_car->get_top_speed() << endl;
+    int a = 4;
+    double b = 6;
+    cout << a + b << endl;
 }
