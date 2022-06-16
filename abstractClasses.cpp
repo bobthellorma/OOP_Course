@@ -52,10 +52,18 @@ class Point{
 typedef Point<int, int> Point_i;
 typedef Point_i* Point_i_ptr;
 
-int main()
+void TKCall()
 {
-    Point_i** ps;
+    Point_i** ps = new Point_i_ptr[2]; // need to define array size or won't compile
     ps[0] = new Point_i(0,0);
     ps[1] = new Point_i(1,1);
-    cout << ps[0]->get_x() << "," << ps[0]->get_y() << endl; // core dumped as expected
+    cout << ps[0]->get_x() << "," << ps[0]->get_y() << endl;
+}
+
+int main()
+{
+     int a = 212;
+     cout << sizeof(&a) << endl; // show size of int*
+     cout << sizeof(a) << endl; // shows size of int
+     short b = 1;
 }
