@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 
 class Book{
@@ -20,7 +21,7 @@ void firstQ()
     cout << b1[0].title << endl;
 }
 
-struct Ape{
+class Ape : public Book{
     public:
         string age;
         Ape(string a): age(a){cout << "+Ape" << endl;}
@@ -28,8 +29,47 @@ struct Ape{
         ~Ape(){cout << "-Ape " << endl;}
 };
 
+struct Point{
+    int x = 10;
+    int y = 7;
+};
+
+void Deez(const int a)
+{
+    //a += 2;
+    cout << a;
+}
+
+struct test{
+    int* p = new int(4);
+};
+
 int main()
 {
-    Ape* a = new Ape;
-    *a.~Ape();
+    //Ape* a = new Ape;
+    //*a.~Ape();
+
+    /*vector<Point> v;
+    vector<Point>::iterator e;
+    v.resize(10);
+    for (e = v.begin(); e < v.end(); e++)
+    {
+        cout << e->y;
+    }
+    */
+   int* peter = new int(4);
+   //cout << peter << endl;
+   int a = 6;
+   string pete;
+   char emin;
+   //cout << emin << endl;
+
+    // using test struct
+    test a1;
+    test a2 = a1;
+    *a1.p = 6;
+    cout << *a1.p << *a2.p << endl;
+
+    int* e;
+    cout << e << endl;
 }
