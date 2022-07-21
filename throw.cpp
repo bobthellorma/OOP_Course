@@ -16,8 +16,8 @@ void printAge(int Age)
 int main()
 {
     try{
-    printAge(-5);
-    }catch(const char* msg){
+    printAge(-5);}
+    catch(const char* msg){
     cerr << "Error: " << msg << endl;
     }
 }

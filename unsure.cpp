@@ -6,6 +6,7 @@ using namespace std;
 class Book{
     public:
     string title;
+    void printing(){cout << "parent";}
 };
 
 void firstQ()
@@ -27,6 +28,7 @@ class Ape : public Book{
         Ape(string a): age(a){cout << "+Ape" << endl;}
         Ape():Ape(0){cout << "+Ape" << endl;}
         ~Ape(){cout << "-Ape " << endl;}
+        void printing(){cout << "child";}
 };
 
 struct Point{
@@ -72,4 +74,9 @@ int main()
 
     int* e;
     cout << e << endl;
+
+    /*Ape * ent = new Book; // you cannot call new parent class and have a pointer as child class
+    ent->printing();
+    */
+
 }
